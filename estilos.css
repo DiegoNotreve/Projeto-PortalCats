@@ -17,6 +17,9 @@
     font-family: "Joti One", serif;
 
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-size: 100%;
@@ -87,7 +90,7 @@ h1 {
 
 }
 
-.menu button {
+.menu a {
     padding: 10px 30px;
     font-size: 30px;
     font-weight: 200;
@@ -100,7 +103,7 @@ h1 {
     -webkit-text-stroke-color: black;
 }
 
-button:hover {
+a:hover {
     transform: scale(1.05);
     transition: 0.2s;
 }

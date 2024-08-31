@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
 
 
-:roots {
+:root {
     -rosa: #E99CD6;
     -azul: #BEE7FD;
     -bege: #D1BDBD;
@@ -40,13 +40,8 @@ header {
 }
 
 
-strong {
-    font-size: 20px;
-    color: #7A2E45;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
 
-}
+
 
 h1 {
     font-family: "Joti One", serif;
@@ -103,6 +98,7 @@ h1 {
     color: #7A2E45;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    
 }
 
 a:hover {
@@ -164,6 +160,7 @@ a:hover {
     background-image: url('fotos/meninaegato.jpg');
     background-size: cover;
     background-position: center;
+    
     padding: 50px;
     color: white;
     text-align: center;
@@ -324,6 +321,8 @@ form .btn-enviar input {
 form .btn-enviar:hover {
     transform: scale(1.1);
     transition: 0.2s;
+    
+   
 }
 
 form .btn-enviar {
@@ -411,287 +410,18 @@ footer p {
     color: #7A2E45;
 }
 
-/* Responsividade para telas pequenas (celulares) */
-@media (max-width: 576px) {
+@media (max-width: 1020px) {
+    
+   h1.titulo1{
+    font-size: 30px;
+   
+   }
 
-    h1 {
-        font-size: 40px;
-        text-shadow: 0px 1px 1px black;
-    }
-
-    .frase-efeito {
-        font-size: 20px;
-    }
-
-    .frase-efeito span {
-        font-size: 30px;
-    }
-
-    .titulos, .frase {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .img-gato img {
-        width: 100%;
-        height: auto;
-    }
-
-    .barra {
-        width: 90%;
-        padding: 20px;
-        border-radius: 15px;
-        margin: 10px;
-    }
-
-    .menu a {
-        padding: 5px 15px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
-
-    .menina h2 {
-        font-size: 1.8em;
-    }
-
-    .cards-section {
-        padding: 10px;
-    }
-
-    .card {
-        padding: 10px;
-    }
-
-    .card-title {
-        font-size: 1.2em;
-    }
-
-    .card-text {
-        font-size: 0.9em;
-    }
-
-    .formulario h2, .formulario h3 {
-        font-size: 20px;
-    }
-
-    form input,
-    textarea {
-        padding: 10px 5px;
-    }
-
-    form .btn-enviar input {
-        width: 120px;
-        font-size: 20px;
-    }
-
-    footer {
-        height: 200px;
-    }
-
-    footer h1 {
-        font-size: 20px;
-    }
-
-    .navfooter img {
-        height: 5rem;
-    }
-
-    .infos a {
-        font-size: 16px;
-    }
-
-    footer p {
-        margin-top: 10px;
-    }
+   .titulos img{
+    width: 100px;
+    height: auto;
+   }
+   
+ 
 }
-
-/* Responsividade para tablets (largura entre 577px e 768px) */
-@media (min-width: 577px) and (max-width: 768px) {
-
-    h1 {
-        font-size: 60px;
-    }
-
-    .frase-efeito {
-        font-size: 30px;
-    }
-
-    .frase-efeito span {
-        font-size: 40px;
-    }
-
-    .titulos, .frase {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .img-gato img {
-        width: 100%;
-        height: auto;
-    }
-
-    .barra {
-        width: 80%;
-        padding: 25px;
-        border-radius: 18px;
-    }
-
-    .menu a {
-        padding: 8px 20px;
-        font-size: 25px;
-        border-radius: 12px;
-    }
-
-    .menina h2 {
-        font-size: 2.2em;
-    }
-
-    .cards-section {
-        padding: 15px;
-    }
-
-    .card {
-        padding: 15px;
-    }
-
-    .card-title {
-        font-size: 1.4em;
-    }
-
-    .card-text {
-        font-size: 1em;
-    }
-
-    .formulario h2, .formulario h3 {
-        font-size: 24px;
-    }
-
-    form input,
-    textarea {
-        padding: 15px 8px;
-    }
-
-    form .btn-enviar input {
-        width: 130px;
-        font-size: 22px;
-    }
-
-    footer {
-        height: 300px;
-    }
-
-    footer h1 {
-        font-size: 25px;
-    }
-
-    .navfooter img {
-        height: 6rem;
-    }
-
-    .infos a {
-        font-size: 18px;
-    }
-
-    footer p {
-        margin-top: 15px;
-    }
-}
-
-/* Responsividade para telas grandes (desktops e monitores maiores) */
-@media (min-width: 769px) {
-
-    h1 {
-        font-size: 80px;
-    }
-
-    .frase-efeito {
-        font-size: 40px;
-    }
-
-    .frase-efeito span {
-        font-size: 50px;
-    }
-
-    .titulos, .frase {
-        flex-direction: row;
-        text-align: left;
-        padding: 30px;
-    }
-
-    .img-gato img {
-        width: 100%;
-        height: auto;
-    }
-
-    .barra {
-        width: 100%;
-        padding: 10px;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .menu a {
-        padding: 10px 30px;
-        font-size: 30px;
-        border-radius: 15px;
-    }
-
-    .menina h2 {
-        font-size: 2.5em;
-    }
-
-    .cards-section {
-        padding: 20px;
-    }
-
-    .card {
-        padding: 20px;
-    }
-
-    .card-title {
-        font-size: 1.5em;
-    }
-
-    .card-text {
-        font-size: 1.1em;
-    }
-
-    .formulario h2, .formulario h3 {
-        font-size: 28px;
-    }
-
-    form input,
-    textarea {
-        padding: 20px 10px;
-    }
-
-    form .btn-enviar input {
-        width: 150px;
-        font-size: 25px;
-    }
-
-    footer {
-        height: 400px;
-    }
-
-    footer h1 {
-        font-size: 30px;
-    }
-
-    .navfooter img {
-        height: 7rem;
-    }
-
-    .infos a {
-        font-size: 20px;
-    }
-
-    footer p {
-        margin-top: 20px;
-    }
-}
-
 

@@ -30,13 +30,15 @@ body {
 
 header {
     background-color: #D1BDBD;
-
-    /* margin-bottom: -176px; */
 }
 
 .img-cabeca {
     transform: rotate(180deg);
 }
+.img-cabeca1 {
+    transform: rotate(180deg);
+}
+
 
 strong {
     font-size: 20px;
@@ -58,7 +60,7 @@ h1 {
 .titulos {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
@@ -186,6 +188,11 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin: 0 auto;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
 }
 
 .section-title {
@@ -404,88 +411,86 @@ footer p {
     color: #7A2E45;
 }
 
-/*RESPONSIVIDADE*/
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 576px) {
 
-/* Estilos padrão já aplicados para telas maiores */
-
-/* Media Queries para telas menores */
-@media screen and (max-width: 1200px) {
-    /* Ajustes para tablets */
     h1 {
-        font-size: 60px;
+        font-size: 40px;
+        text-shadow: 0px 1px 1px black;
     }
 
-    .menu button {
-        padding: 8px 20px;
-        font-size: 25px;
+    .frase-efeito {
+        font-size: 20px;
     }
 
     .frase-efeito span {
-        font-size: 40px;
-    }
-
-    .menina h2 {
-        max-width: 60%;
         font-size: 30px;
     }
 
-    .item {
-        max-width: 160px;
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    /* Ajustes para celulares */
-    body {
-        font-size: 90%;
-    }
-
-    .menu {
+    .titulos, .frase {
         flex-direction: column;
-        gap: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .img-gato img {
+        width: 100%;
+        height: auto;
     }
 
     .barra {
-        width: 80%;
+        width: 90%;
         padding: 20px;
         border-radius: 15px;
-        transform: translate(0%);
-        margin: 10px auto;
+        margin: 10px;
     }
 
-    h1 {
-        font-size: 50px;
-    }
-
-    .frase img {
-        max-width: 80px;
-    }
-
-    .frase-efeito span {
-        font-size: 35px;
+    .menu a {
+        padding: 5px 15px;
+        font-size: 20px;
+        border-radius: 10px;
     }
 
     .menina h2 {
-        max-width: 80%;
-        font-size: 25px;
+        font-size: 1.8em;
     }
 
-    .lista {
-        max-width: 90%;
+    .cards-section {
+        padding: 10px;
     }
 
-    .item {
-        max-width: 140px;
-        padding: 15px;
+    .card {
+        padding: 10px;
     }
 
-    form {
-        max-width: 90%;
+    .card-title {
+        font-size: 1.2em;
+    }
+
+    .card-text {
+        font-size: 0.9em;
+    }
+
+    .formulario h2, .formulario h3 {
+        font-size: 20px;
+    }
+
+    form input,
+    textarea {
+        padding: 10px 5px;
+    }
+
+    form .btn-enviar input {
+        width: 120px;
+        font-size: 20px;
+    }
+
+    footer {
+        height: 200px;
     }
 
     footer h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .navfooter img {
@@ -493,48 +498,200 @@ footer p {
     }
 
     .infos a {
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    .infos ul {
-        flex-direction: column;
-        gap: 20px;
+    footer p {
+        margin-top: 10px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    /* Ajustes para smartphones */
+/* Responsividade para tablets (largura entre 577px e 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+
     h1 {
-        font-size: 40px;
+        font-size: 60px;
     }
 
-    .frase img {
-        max-width: 60px;
-    }
-
-    .frase-efeito span {
+    .frase-efeito {
         font-size: 30px;
     }
 
+    .frase-efeito span {
+        font-size: 40px;
+    }
+
+    .titulos, .frase {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .img-gato img {
+        width: 100%;
+        height: auto;
+    }
+
+    .barra {
+        width: 80%;
+        padding: 25px;
+        border-radius: 18px;
+    }
+
+    .menu a {
+        padding: 8px 20px;
+        font-size: 25px;
+        border-radius: 12px;
+    }
+
     .menina h2 {
-        font-size: 20px;
+        font-size: 2.2em;
     }
 
-    .item {
-        max-width: 120px;
-        padding: 10px;
+    .cards-section {
+        padding: 15px;
     }
 
-    .menu button {
-        padding: 8px 15px;
-        font-size: 20px;
+    .card {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.4em;
+    }
+
+    .card-text {
+        font-size: 1em;
+    }
+
+    .formulario h2, .formulario h3 {
+        font-size: 24px;
+    }
+
+    form input,
+    textarea {
+        padding: 15px 8px;
+    }
+
+    form .btn-enviar input {
+        width: 130px;
+        font-size: 22px;
+    }
+
+    footer {
+        height: 300px;
     }
 
     footer h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .navfooter img {
-        height: 4rem;
+        height: 6rem;
+    }
+
+    .infos a {
+        font-size: 18px;
+    }
+
+    footer p {
+        margin-top: 15px;
     }
 }
+
+/* Responsividade para telas grandes (desktops e monitores maiores) */
+@media (min-width: 769px) {
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .frase-efeito {
+        font-size: 40px;
+    }
+
+    .frase-efeito span {
+        font-size: 50px;
+    }
+
+    .titulos, .frase {
+        flex-direction: row;
+        text-align: left;
+        padding: 30px;
+    }
+
+    .img-gato img {
+        width: 100%;
+        height: auto;
+    }
+
+    .barra {
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu a {
+        padding: 10px 30px;
+        font-size: 30px;
+        border-radius: 15px;
+    }
+
+    .menina h2 {
+        font-size: 2.5em;
+    }
+
+    .cards-section {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.5em;
+    }
+
+    .card-text {
+        font-size: 1.1em;
+    }
+
+    .formulario h2, .formulario h3 {
+        font-size: 28px;
+    }
+
+    form input,
+    textarea {
+        padding: 20px 10px;
+    }
+
+    form .btn-enviar input {
+        width: 150px;
+        font-size: 25px;
+    }
+
+    footer {
+        height: 400px;
+    }
+
+    footer h1 {
+        font-size: 30px;
+    }
+
+    .navfooter img {
+        height: 7rem;
+    }
+
+    .infos a {
+        font-size: 20px;
+    }
+
+    footer p {
+        margin-top: 20px;
+    }
+}
+
+

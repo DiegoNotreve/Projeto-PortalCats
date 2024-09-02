@@ -428,12 +428,16 @@ footer p {
     height: auto;
    }
    
- .barra{
+   .barra {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
- }
+    width: 195px;
+    height: 450px;
+    margin: 0;
+    
+    
+}
 
  .menu{
     display: flex;
